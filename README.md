@@ -1,4 +1,4 @@
-# 🍜 MauJajan — Web Pemesanan Ticket 
+#TicketBox — Web Pemesanan Ticket 
 
 Aplikasi web pemesanan tiket berbasis **Laravel**. Customer bisa memesan tiket tanpa login, sementara admin (panitia) bisa mengelola menu dan pesanan.
 
@@ -7,18 +7,18 @@ Aplikasi web pemesanan tiket berbasis **Laravel**. Customer bisa memesan tiket t
 ## 📌 Fitur Utama
 
 ### 👤 Sisi Customer (Publik)
-- Lihat katalog menu (Musik, Festiva;, Seminar)
+- Lihat katalog (Musik, Festiva;, Seminar)
 - Filter kategori tanpa reload
-- Pilih menu + jumlah porsi
-- Isi nama & nomor meja
+- Pilih event + jumlah tiket 
+- Isi nama & email
 - Konfirmasi pesanan via modal
 - Tanpa perlu login
 
 ### 🔐 Sisi Admin (Wajib Login)
 - Dashboard rekap pesanan masuk
 - Update status pesanan (Pending → Diproses → Selesai)
-- CRUD menu makanan (Tambah, Edit, Hapus)
-- Upload gambar menu
+- CRUD event (Tambah, Edit, Hapus)
+- Upload gambar event
 
 ---
 
@@ -50,8 +50,8 @@ Aplikasi web pemesanan tiket berbasis **Laravel**. Customer bisa memesan tiket t
 ### Langkah Instalasi
 
 1. Clone repository
-git clone https://github.com/nabilafilxsa/maujajan.git
-cd maujajan
+git clone https://github.com/nabilafilxsa/praserkom_nabilafil.git
+cd praserkom_nabilafil
 
 2. Install dependency PHP
 composer install
@@ -69,7 +69,7 @@ php artisan key:generate
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=maujajan
+DB_DATABASE=db_tiket_konser
 DB_USERNAME=root
 DB_PASSWORD=
 
@@ -94,7 +94,7 @@ Buka di browser: http://127.0.0.1:8000
 | Field | Value |
 |-------|-------|
 | URL | http://127.0.0.1:8000/login |
-| Email | admin@gmail.com |
+| Email | panitia@gmail.com |
 | Password | password123 |
 
 ---
@@ -103,8 +103,8 @@ Buka di browser: http://127.0.0.1:8000
 
 ### Untuk Customer
 1. Buka halaman utama
-2. Pilih menu + jumlah porsi
-3. Isi nama & nomor meja
+2. Pilih event + jumlah tiket
+3. Isi nama & email
 4. Klik "Pesan Sekarang"
 5. Konfirmasi pesanan
 
@@ -112,7 +112,7 @@ Buka di browser: http://127.0.0.1:8000
 1. Login di /login
 2. Lihat rekap pesanan di /dashboard
 3. Update status pesanan
-4. Kelola menu di /admin/foods
+4. Kelola menu di /admin/event
 
 ---
 
